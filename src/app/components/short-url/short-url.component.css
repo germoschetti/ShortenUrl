@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Prozima Nova Extra Bold';
+    src: url('../../../assets/fonts/ProximaNovaCondensedBold.otf') format('truetype');
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Prozima Nova Extra Bold';
+    font-size: 4.4em;
+    font-weight: 900;
+    line-height: 56px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.first-section {
+    left: -2%;
+    margin-top: 12rem;
+}
+
+.first-image {
+    position: relative;
+    right: 2%;
+    margin-top: 8rem;
+}
+
+.first-text {
+    width: 95%;
+    margin: 15px;
+    color: #56575b;
+    font-size: 1.5rem;
+}
+
+.links {
+    text-align: center;
+    margin-left: 0px;
+}
+
+.btn-shorten {
+    height: 50px;
+    background: #1b3987;
+    border: none;
+    border-radius: 8px;
+    width: 95%;
+}
+
+.shortenUrlSection {
+    background: #0b1736;
+    padding: 60px 0px 60px 0px;
+    margin-top: 50px;
+}
+
+.terms {
+    color: #9ca1ad;
+    font-size: .9em;
+}
+
+.terms a {
+    text-decoration: underline;
+    color: #9ca1ad;
+}
+
+.card-footer {
+    background: #edf2fe;
+    margin-left: -16px;
+    width: 102.8%;
+}
+
+.card-footer p {
+    font-family: 'Prozima Nova Extra Bold';
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.btn-copy {
+    background: #c3d8e9;
+    border: none;
+}
+
+.btn-copy:hover {
+    background: #bfd2e0;
+    border: none;
+}
+
+.error-alert{
+    font-size: 1.2;
+    font-weight: 600;
+}

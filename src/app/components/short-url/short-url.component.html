@@ -1,0 +1,79 @@
+<section class="container-box">
+    <div class="row">
+        <div class="col-lg-8 first-section">
+            <div>
+                <h1>Short links, big results</h1>
+                <p class="first-text">A URL shortener built with powerful tools to help you grow and protect your brand.
+                </p>
+                <br>
+                <div class="col-lg-4 text-start">
+
+                    <a href="#" class="btn btn-primary p-3 mb-2 col-lg-12">Get Started for Free</a><br>
+                    <p class="text-center col-lg-12">
+                        <a href="">Get a Quote</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-5">
+            <div class="first-image">
+                <img src="../../../assets/image/background1.jpg" style="width: 480px;" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div></div>
+
+<section class="shortenUrlSection">
+   <div class="row">
+    <div class="container-box">
+        <div class="alert alert-danger text-center " *ngIf='err == true' role="alert">
+          <span class="error-alert"> Please enter a valid url!</span>
+          </div>
+
+        <form class="mt-5 ml-5" #shortenUrlForm>
+            <div class="row">
+                <div class="col-md-8 text-right form-group p-4">
+                    <input type="text" class="form-control p-4 mb-2" [(ngModel)]='longUrl' name="longUrl"
+                        placeholder="Shorten your url...">
+                    <span class="terms mr-3">By clicking SHORTEN, you are agreeing to Bitly’s <a href="#">Terms of
+                            Service</a> and <a href="#">Privacy Policy</a></span>
+                </div>
+                <div class="col-md-4 pr-5 form-group p-4">
+                    <input type="submit" value="Shorten" (click)='shortenUrl(shortenUrlForm)'
+                        class="form-control btn btn-dark btn-shorten">
+                </div>
+            </div>
+        </form>
+        <div class="card col-11 mx-auto" *ngIf='shortUrl.length != 0'>
+            <div class="card-body row">
+                <div class="col-md-8">
+                    <p style="color: #56575b;" class="mt-2">
+                        {{showlongUrl}}</p>
+                </div>
+                <div class="col-md-4 row justify-content-end">
+                    <a class="mt-2" [href]="shortUrl">{{shortUrl}}</a>
+                    <button class="btn btn-primary btn-copy ml-4" ngxClipboard [cbContent]="shortUrl">Copy</button>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>Want to customize, brand, and track your links?</p>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <app-spinner *ngIf='loading == true'></app-spinner>
+
+</section>
+
+
+

@@ -1,0 +1,18 @@
+  @font-face {
+    font-family: 'Prozima Nova Regular';
+    src: url('assets/fonts/ProximaNovaRegular.otf') format('truetype');
+    font-style: normal;
+  }
+
+  body{
+      font-family: 'Prozima Nova Regular';
+  }
+
+  .container-box{
+    width: 65%;
+    margin: auto;
+}
+
+.btn{
+  background: #2a5bd7;
+}
